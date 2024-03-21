@@ -28,22 +28,32 @@ Why This Matters: If you want to get a new home somewhere but want to have relia
 
 
 ## Data Cleaning and Exploratory Data Analysis
-
 ### Cleaning Process
 
-Our journey begins with cleaning the dataset to ensure the accuracy in our findings. We merged datasets, handled missing values, and removed outliers. This preparation was crucial for the integrity of our analysis.
+
+EXAMPLE DATA SET WE CAN USE
+ | meal_type    |     2008.0 |     2009.0 |    2010.0 |    2011.0 |    2012.0 |    2013.0 |    2014.0 |    2015.0 |    2016.0 |    2017.0 |    2018.0 |
+|:-------------|-----------:|-----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|
+| snack        | 0.419618   | 0.411173   | 0.434028  | 0.422243  | 0.405003  | 0.385073  | 0.381717  | 0.364489  | 0.370481  | 0.383044  | 0.382773  |
+| breakfast    | 0.357484   | 0.349112   | 0.344009  | 0.353171  | 0.347421  | 0.351531  | 0.358347  | 0.344017  | 0.347993  | 0.343531  | 0.326648  |
+| lunch        | 0.135695   | 0.135584   | 0.126102  | 0.124747  | 0.139967  | 0.142635  | 0.130763  | 0.139166  | 0.136765  | 0.134455  | 0.134757  |
+| dinner       | 0.0458329  | 0.0541099  | 0.0489045 | 0.0491315 | 0.058631  | 0.0600833 | 0.0647059 | 0.0708019 | 0.0649675 | 0.0591556 | 0.0688212 |
+| family meal  | 0.00867281 | 0.00912846 | 0.0101975 | 0.0104499 | 0.0101565 | 0.0128586 | 0.0116057 | 0.0182793 | 0.015992  | 0.0142244 | 0.0135623 |
+| jumbo meal   | 0.0134523  | 0.0184634  | 0.0156884 | 0.0152808 | 0.0153607 | 0.0199057 | 0.0251192 | 0.0279064 | 0.025987  | 0.0258523 | 0.0298658 |
+| holiday meal | 0.0192448  | 0.0224287  | 0.0210711 | 0.0249769 | 0.0234608 | 0.0279138 | 0.0277424 | 0.03534   | 0.0378144 | 0.0397381 | 0.0435724 |
+
 
 ### Exploratory Analysis
-
 #### Univariate Analysis
-
+(https://github.com/kewlerkids/ailelevy.github.io/assets/42384002/a5cb20e7-1b93-4e94-9400-f7cf575313ce)
+ 
 #### Bivariate Analysis
 
 ## Hypothesis Testing
 
 ## Predicting Power Outages
 
-### Framing the Prediction Problem
+### Assessment of Missingness
 
 ### Baseline Model
 
