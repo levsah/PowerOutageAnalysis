@@ -31,20 +31,31 @@ Why This Matters: If you want to get a new home somewhere but want to have relia
 We made a new data frame with only the rows that had severe weather in them. We also took out rows where both CUSTOMERS.AFFECTED  and OUTAGE.DURATION was empty/na because we want to reduce missingness in the main features we want to analyze.
 
 
- | event    |     Year |     Month |    U.S._STATE |    POSTAL.CODE |    NERC.REGION |    CLIMATE.REGION |    ANOMALY.LEVEL |    CLIAMTE.CATEGORY |   OUTAGE.START.DATE |    OUTAGE.START.TIME |
-|:-------------|-----------:|-----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|
-| 1   | 2011   | 7 | Minnesota | MN | MRO | East North Central | -0.3 | normal | 2011-07-01 | 17:00:00 |
-| 2  | 2010   | 10 |  Minnesota | MN |  MRO | East North Central | -1.5 | cold | 2010-10-26 | 20:00:00 |
-| 3  | 2012  | 6 | Minnesota | MN | MRO | East North Central | -0.1 | normal | 2012-06-19 | 4:30:00 |
-| 4  | 2015  | 7 | Minnesota | MN | MRO | East North Central | 1.2 | warm | 2015-07-18 | 2:00:00 |
-| 5 | 2010 | 11 | Minnesota | MN | MRO | East North Central | -1.4 | cold | 2010-11-13 | 15:00:00 |
-| 6  | 2010 | 7 | Minnesota | MN | MRO | East North Central | -0.9 | cold | 2010-07-17 | 20:30:00 |
-| 7 | 2005  | 6 | Minnesota | MN | MRO | East North Central | 0.2 | normal | 2005-06-08 | 4:00:00 |
-| 8 | 2013 |  6 | Minnesota | MN | MRO | East North Central | -0.2 | normal | 2013-06-21 | 17:39:00 |
-| 9  | 2013  |  6 | Minnesota | MN | MRO | East North Central | -0.2 | normal | 2013-06-21 | 3:00:00 |
-| 10 | 2005  |  9 | Minnesota | MN | MRO | East North Central | 0 | normal | 2005-09-21 | 19:00:00 |
+ | event    |     Year |     Month |    U.S._STATE |    POSTAL.CODE |    NERC.REGION |    CLIMATE.REGION |
+|:-------------|-----------:|-----------:|----------:|----------:|----------:|----------:|
+| 1   | 2011   | 7 | Minnesota | MN | MRO | East North Central |
+| 2  | 2010   | 10 |  Minnesota | MN |  MRO | East North Central |
+| 3  | 2012  | 6 | Minnesota | MN | MRO | East North Central |
+| 4  | 2015  | 7 | Minnesota | MN | MRO | East North Central |
+| 5 | 2010 | 11 | Minnesota | MN | MRO | East North Central |
+| 6  | 2010 | 7 | Minnesota | MN | MRO | East North Central |
+| 7 | 2005  | 6 | Minnesota | MN | MRO | East North Central |
+| 8 | 2013 |  6 | Minnesota | MN | MRO | East North Central |
+| 9  | 2013  |  6 | Minnesota | MN | MRO | East North Central |
+| 10 | 2005  |  9 | Minnesota | MN | MRO | East North Central |
 
-
+|    ANOMALY.LEVEL |    CLIAMTE.CATEGORY |   OUTAGE.START.DATE |    OUTAGE.START.TIME |
+|----------:|----------:|----------:|----------:|
+| -0.3 | normal | 2011-07-01 | 17:00:00 |
+| -1.5 | cold | 2010-10-26 | 20:00:00 |
+| -0.1 | normal | 2012-06-19 | 4:30:00 |
+| 1.2 | warm | 2015-07-18 | 2:00:00 |
+| -1.4 | cold | 2010-11-13 | 15:00:00 |
+| -0.9 | cold | 2010-07-17 | 20:30:00 |
+| 0.2 | normal | 2005-06-08 | 4:00:00 |
+| -0.2 | normal | 2013-06-21 | 17:39:00 |
+| -0.2 | normal | 2013-06-21 | 3:00:00 |
+| 0 | normal | 2005-09-21 | 19:00:00 |
 
 ### Univariate Analysis
 We wanted to create a pivot table of all types of power-outage causes to show the trend between the customers affected compared to this. Please view the pivot table below.
