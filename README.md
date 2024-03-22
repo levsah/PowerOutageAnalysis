@@ -30,16 +30,21 @@ Why This Matters: If you want to get a new home somewhere but want to have relia
 
 We made a new data frame with only the rows that had severe weather in them. We also took out rows where both CUSTOMERS.AFFECTED  and OUTAGE.DURATION was empty/na because we want to reduce missingness in the main features we want to analyze.
 
-# UPDATE THIS EXAMPLE DATA SET WE CAN USE
- | meal_type    |     2008.0 |     2009.0 |    2010.0 |    2011.0 |    2012.0 |    2013.0 |    2014.0 |    2015.0 |    2016.0 |    2017.0 |    2018.0 |
-|:-------------|-----------:|-----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|
-| snack        | 0.419618   | 0.411173   | 0.434028  | 0.422243  | 0.405003  | 0.385073  | 0.381717  | 0.364489  | 0.370481  | 0.383044  | 0.382773  |
-| breakfast    | 0.357484   | 0.349112   | 0.344009  | 0.353171  | 0.347421  | 0.351531  | 0.358347  | 0.344017  | 0.347993  | 0.343531  | 0.326648  |
-| lunch        | 0.135695   | 0.135584   | 0.126102  | 0.124747  | 0.139967  | 0.142635  | 0.130763  | 0.139166  | 0.136765  | 0.134455  | 0.134757  |
-| dinner       | 0.0458329  | 0.0541099  | 0.0489045 | 0.0491315 | 0.058631  | 0.0600833 | 0.0647059 | 0.0708019 | 0.0649675 | 0.0591556 | 0.0688212 |
-| family meal  | 0.00867281 | 0.00912846 | 0.0101975 | 0.0104499 | 0.0101565 | 0.0128586 | 0.0116057 | 0.0182793 | 0.015992  | 0.0142244 | 0.0135623 |
-| jumbo meal   | 0.0134523  | 0.0184634  | 0.0156884 | 0.0152808 | 0.0153607 | 0.0199057 | 0.0251192 | 0.0279064 | 0.025987  | 0.0258523 | 0.0298658 |
-| holiday meal | 0.0192448  | 0.0224287  | 0.0210711 | 0.0249769 | 0.0234608 | 0.0279138 | 0.0277424 | 0.03534   | 0.0378144 | 0.0397381 | 0.0435724 |
+
+ | event    |     Year |     Month |    U.S._STATE |    POSTAL.CODE |    NERC.REGION |    CLIMATE.REGION |    ANOMALY.LEVEL |    CLIAMTE.CATEGORY |   OUTAGE.START.DATE |    OUTAGE.START.TIME |
+|:-------------|-----------:|-----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|
+| 1   | 2011   | 7 | Minnesota | MN | MRO | East North Central | -0.3 | normal | 2011-07-01 | 17:00:00 |
+| 2  | 2010   | 10 |  Minnesota | MN |  MRO | East North Central | -1.5 | cold | 2010-10-26 | 20:00:00 |
+| 3  | 2012  | 6 | Minnesota | MN | MRO | East North Central | -0.1 | normal | 2012-06-19 | 4:30:00 |
+| 4  | 2015  | 7 | Minnesota | MN | MRO | East North Central | 1.2 | warm | 2015-07-18 | 2:00:00 |
+| 5 | 2010 | 11 | Minnesota | MN | MRO | East North Central | -1.4 | cold | 2010-11-13 | 15:00:00 |
+| 6  | 2010 | 7 | Minnesota | MN | MRO | East North Central | -0.9 | cold | 2010-07-17 | 20:30:00 |
+| 7 | 2005  | 6 | Minnesota | MN | MRO | East North Central | 0.2 | normal | 2005-06-08 | 4:00:00 |
+| 8 | 2013 |  6 | Minnesota | MN | MRO | East North Central | -0.2 | normal | 2013-06-21 | 17:39:00 |
+| 9  | 2013  |  6 | Minnesota | MN | MRO | East North Central | -0.2 | normal | 2013-06-21 | 3:00:00 |
+| 10 | 2005  |  9 | Minnesota | MN | MRO | East North Central | 0 | normal | 2005-09-21 | 19:00:00 |
+
+
 
 ### Univariate Analysis
 We wanted to create a pivot table of all types of power-outage causes to show the trend between the customers affected compared to this. Please view the pivot table below.
