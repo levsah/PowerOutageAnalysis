@@ -94,5 +94,5 @@ We got a root mean squared error of 24 between our y test set and our y predicti
 ---
 # Conclusion
 
-Our analysis offers insightful findings on the impact of severe weather on power outages. With this information, we are able to see that there is a correlation between being a costal or outer state compared to an inner state and the increase in power outages to the outer states.
+Our analysis offers insightful findings on the impact of severe weather on power outages. With this information, we are able to see that there is a correlation between being a costal or outer state compared to an inner state and does not imply an increase in power outages to the outer states.
 
