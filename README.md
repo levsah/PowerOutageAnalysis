@@ -30,7 +30,7 @@ Why This Matters: If you want to get a new home somewhere but want to have relia
 We made a new data frame with only the rows that had severe weather in them. We also took out rows where both CUSTOMERS.AFFECTED  and OUTAGE.DURATION was empty/na because we want to reduce missingness in the main features we want to analyze.
 
 
- | event    |     Year |     Month |    U.S._STATE |    POSTAL.CODE |    NERC.REGION |    CLIMATE.REGION |
+ | EVENT    |     YEAR |     MONTH |    U.S._STATE |    POSTAL |    NERC |    CLIMATE.REGION |
 |:-------------|-----------:|-----------:|----------:|----------:|----------:|----------:|
 | 1   | 2011   | 7 | Minnesota | MN | MRO | East North Central |
 | 2  | 2010   | 10 |  Minnesota | MN |  MRO | East North Central |
@@ -43,7 +43,7 @@ We made a new data frame with only the rows that had severe weather in them. We 
 | 9  | 2013  |  6 | Minnesota | MN | MRO | East North Central |
 | 10 | 2005  |  9 | Minnesota | MN | MRO | East North Central |
 
-|    ANOMALY.LEVEL |    CLIAMTE.CATEGORY |   OUTAGE.START.DATE |    OUTAGE.START.TIME |
+|    ANOMALY |    CATEGORY |  START.DATE |    START.TIME |
 |----------:|----------:|----------:|----------:|
 | -0.3 | normal | 2011-07-01 | 17:00:00 |
 | -1.5 | cold | 2010-10-26 | 20:00:00 |
