@@ -7,10 +7,10 @@ This is a data science project on if power outages are more likely to effect cos
 
 ## Introduction
 
-Welcome to our exploration of how severe weather affects power outages in the United States. Our analysis dives into a comprehensive dataset to uncover patterns between whether the location of a state matters in comparison to the amount of power outages they get. For example do coastal states tend to experience more power outages then states that are inland.
+Welcome to our exploration of how severe weather affects power outages in the United States. Our analysis dives into a comprehensive dataset to uncover patterns between whether the location of a state matters in comparison to the amount of power outages they get. We will mainly be analyzing if there is a percentage increase in power outages for outer states compared to the number of power outages we see with inward states. While looking at outage raw numbers we will also be looking at outage duration to ensure our model is correctly ran.
 
 ## Project Overview:
-This project investigates [Why do some states that have power outages caused by Severe Weather have more power outages than others?], utilizing data from [Outage]. The dataset consists of [1534] records and includes key columns such as:
+This project investigates [Is the number of power outages and duration something that is affected by the location of a state?], utilizing data from [Outage]. The dataset consists of [1534] records and includes key columns such as:
 
 |Column	                 |Description|
 |---                     |---        |
@@ -21,13 +21,13 @@ This project investigates [Why do some states that have power outages caused by 
 |`'Anomaly.level'`	            |How much of an anomaly this power outage was |
 |`'Outage.Duration'`	              |How long the outage lasted|
 
-Why This Matters: If you want to get a new home somewhere but want to have reliable power this could be useful. Company wise if companies wanted to put their focus more towards those areas that get outages more often to help they could also check and be able to help.
+Why This Matters: If you want to get a new home somewhere but want to have reliable power this could be useful. As well as people living in those areas can try to be better prepared if they are in a region that gets very frequent as well as long-lasting power outages. Company wise if companies wanted to put their focus more towards those areas that get outages more often to help they could also check and be able to increase their power out put or take precautionary measures.
 
 
 # Data Cleaning and Exploratory Data Analysis
 ### Data Cleaning Process
 
-We made a new data frame with only the rows that had severe weather in them. We also took out rows where both CUSTOMERS.AFFECTED  and OUTAGE.DURATION was empty/na because we want to reduce missingness in the main features we want to analyze.
+We made a new data frame with only the rows that had severe weather in them. We also took out rows where both CUSTOMERS.AFFECTED  and OUTAGE.DURATION was empty/na because we want to reduce missingness in the main features we want to analyze. Below are the first few rows we have included into our cleaned data frame.
 
 
  | EVENT    |     YEAR |     MONTH |    U.S._STATE |    POSTAL |    NERC |    CLIMATE.REGION |
@@ -65,7 +65,7 @@ We wanted to create a pivot table of all types of power-outage causes to show th
 Out of all the power outages, we added all the minutes for each type. We noticed that 75% of power outages were caused by severe weather, which can be seen through here.
  
 ### Bivariate Analysis
-We created scatter plots to compare the number of power outages in the states. With this, we compared the power outage total to the outage duration. With these two numerical features, we wanted to access similar features by finding the R2 and comparing it to other features. With the R^2 of numerical features, we compared this to the number of power outages per state. To access which features have the best correlation with the number of power outages per state we filter out numerical features from serve weather df. 
+We created scatter plots to compare the number of power outages in the states. With this, we compared the power outage total to the outage duration. With these two numerical features, we wanted to access similar features by finding the R^2 and comparing it to other features. With the R^2 of numerical features, we compared this to the number of power outages per state. To access which features have the best correlation with the number of power outages per state we filter out numerical features from serve weather df. 
 ![newplot (2)](https://github.com/kewlerkids/outageanalysis/assets/42384002/c3a61838-867f-47ef-bbbb-008d3ed4fb55)
 
 We realized we couldn't perform the same aggregation on all numerical features so we split the features by their aggregation method into two lists. We wanted to find the correlation of each feature per aggregation method with the number of power outages per state. So we can try to see if they are at all related. After we compared the R^2 values to the rank of each group within the two lists. We took the top three features with the best R^2 from each group and determined the best features to compare the number of power outages per state. Then we asked how the correlations of the features we took the sums of compare to the average. We realized that the features that we aggregated with the sum had a much larger R^2, so we stuck with the sum. We already compared the number of power outages per state and the outage duration and coincidently outage duration happened to be a feature with one of the best R^2. So we compared the number of power outages with the other top two features. With this, we made scatter plots with the two top features we had.
@@ -102,7 +102,7 @@ For quantitative we wanted to predict count, however, count is the only numerica
 # Final Model
 How can we make our model better?
 
-We couldn't! After attempting to implement a standard scaler the quantile transformer and tuning the hyperparameters of our peram_grid with a cross-validation value of 5. We were unable to obtain a high R^2.
+We couldn't! After attempting to implement a standard scaler the quantile transformer and tuning the hyperparameters of our perma_grid with a cross-validation value of 5. We were unable to obtain a high R^2.
 
 # Fairness Analysis
 We got a root mean squared error of 24 between our y test set and our y prediction set. After running a permutation test we found a P-value of 0.95 which gives us reason to assume that our model overfits our validation set.
