@@ -22,16 +22,15 @@ This project investigates [Why do some states that have power outages caused by 
 |`'Anomaly.level'`	            |How much of an anomaly this power outage was |
 |`'Outage.Duration'`	              |How long the outage lasted|
 
-## ADD MORE HERE IF YOU THINK WE NEED MORE
-
 Why This Matters: If you want to get a new home somewhere but want to have reliable power this could be useful. Company wise if companies wanted to put their focus more towards those areas that get outages more often to help they could also check and be able to help.
 
 
 ## Data Cleaning and Exploratory Data Analysis
 ## Data Cleaning Process
 
+We made a new data frame with only the rows that had severe weather in them. We also took out rows where both CUSTOMERS.AFFECTED  and the OUTAGE.DURATION was empty/na because we want to reduce missingness in the main features we want to analyze.
 
-EXAMPLE DATA SET WE CAN USE
+# UPDATE THIS EXAMPLE DATA SET WE CAN USE
  | meal_type    |     2008.0 |     2009.0 |    2010.0 |    2011.0 |    2012.0 |    2013.0 |    2014.0 |    2015.0 |    2016.0 |    2017.0 |    2018.0 |
 |:-------------|-----------:|-----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|
 | snack        | 0.419618   | 0.411173   | 0.434028  | 0.422243  | 0.405003  | 0.385073  | 0.381717  | 0.364489  | 0.370481  | 0.383044  | 0.382773  |
@@ -43,7 +42,7 @@ EXAMPLE DATA SET WE CAN USE
 | holiday meal | 0.0192448  | 0.0224287  | 0.0210711 | 0.0249769 | 0.0234608 | 0.0279138 | 0.0277424 | 0.03534   | 0.0378144 | 0.0397381 | 0.0435724 |
 
 ### Univariate Analysis
-(https://github.com/kewlerkids/ailelevy.github.io/assets/42384002/a5cb20e7-1b93-4e94-9400-f7cf575313ce)
+
  
 ### Bivariate Analysis
 ### Interesting Aggregates
