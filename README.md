@@ -42,9 +42,15 @@ We made a new data frame with only the rows that had severe weather in them. We 
 | holiday meal | 0.0192448  | 0.0224287  | 0.0210711 | 0.0249769 | 0.0234608 | 0.0279138 | 0.0277424 | 0.03534   | 0.0378144 | 0.0397381 | 0.0435724 |
 
 ### Univariate Analysis
+We wanted to create a pivot table of all types of power-outage causes to show the trend between the customers affected compared to this. Please view the pivot table below.
 
+# Add table
+
+Out of all the power outages, we added all the minutes for each type. We noticed that 75% of power outages were caused by severe weather, which can be seen through here.
  
 ### Bivariate Analysis
+We created scatter plots to compare the number of power outages in the states. With this, we compared the power outage total to the outage duration. With these two numerical features, we wanted to access similar features by finding the R2 and comparing it to other features.
+
 ### Interesting Aggregates
 
 ## Assessment of Missingness
