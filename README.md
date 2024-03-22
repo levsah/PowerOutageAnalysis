@@ -60,22 +60,34 @@ As the number of power outages what happens to the other features and why? So wh
 We had started with a lot of missingness within our data but through our data cleaning process, we were able to reduce or remove the amount of missingness that would have been prevalent. Yet we still found features with missingness dependencies. Such as the customers affected feature, we found that this feature was not missing at random
 
 ### NMAR Analysis
+It was not missing a random because the P-value we received was high, which suggests our columns are independent of each other. There is a high probability that the missingness of customers affected is not related to how long a power outage lasts.
 
 ### Missingness Dependency
-
+However, when we compare coustmers affected to another column, such as population we have evidence to show that we shouldn't rule out the possibility of customers affected being dependent on the population since the P-value is low.
 
 ## Hypothesis Testing
+Null Hypothesis: There is no difference in the average number of power outages between coastal states and non-coastal states. By coastal we mean anything on the outer border vs the inner border of the country.
+Alternate Hypothesis: There is a difference in the average number of power outages between coastal states and non-coastal states.
+
+Our P-value is greater than our alpha level of .05 so we fail to reject the null.
 
 ## Framing a Prediction Problem
 ### Problem Identification
+We will be predicting the number of power outages per year by incident. What we know is the year and the cause category that we can use to predict the number of power outages per year by cause category.
 
 ## Baseline Model
+For quantitative we wanted to predict count, however, count is the only numerical feature and the rest are technically categorical. We made a new feature called random number and that randomizes different. We assign them for each record in the data frame. The purpose is to randomly split the data into training and test sets so that we can introduce randomness. Then we created a list of categorical columns and we also made a list of past-through columns to transform the features that we wanted to transform. We one hot encoded the categorical columns. This is how we created our pipeline data with one hot encoded data. We then fitted the model got the transformed data and then split the data into training and test sets with a test size of 20% or 0.2 and a random state of 42. Then we wanted to compare multiple models so the first one we compared was linear regression after predicting the values of the count of the number of power outages per year by cause category we got an R^2 value of .5 meaning 51% of the variability is cause the features that we analyzed. Now we want to test with the random force classifier and we found the R^2 value was 0! 
 
 ## Final Model
+How can we make our model better?
+
+We couldn't! After attempting to implement a standard scaler the quantile transformer and tuning the hyperparameters of our peram_grid with a cross-validation value of 5. We were unable to obtain a high R^2.
 
 ## Fairness Analysis
----
-## Conclusion
+We got a root mean squared error of 24 between our y test set and our y prediction set. After running a permutation test we found a P-value of 0.95 which gives us reason to assume that our model overfits our validation set.
 
-Our analysis offers insightful findings on the impact of severe weather on power outages.
+---
+# Conclusion
+
+Our analysis offers insightful findings on the impact of severe weather on power outages. With this information, we are able to see that there is a correlation between being a costal or outer state compared to an inner state and the increase in power outages to the outer states.
 
