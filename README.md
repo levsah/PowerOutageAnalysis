@@ -79,7 +79,7 @@ As the number of power outages what happens to the other features and why? So wh
 # Assessment of Missingness
 We had started with a lot of missingness within our data but through our data cleaning process, we were able to reduce or remove the amount of missingness that would have been prevalent. Yet we still found features with missingness dependencies. Such as the customers affected feature, we found that this feature was not missing at random
 ![newplot (3)](https://github.com/kewlerkids/outageanalysis/assets/42384002/b5eb997d-3139-433a-9198-bd81370f0151)
-
+![newplot (4)](https://github.com/kewlerkids/outageanalysis/assets/42384002/4d95089f-98e7-431b-a894-8c1dadd0d5b1)
 ### NMAR Analysis
 It was not missing a random because the P-value we received was high, which suggests our columns are independent of each other. There is a high probability that the missingness of customers affected is not related to how long a power outage lasts.
 
@@ -93,7 +93,7 @@ Alternate Hypothesis: There is a difference in the average number of power outag
 
 
 Our P-value is greater than our alpha level of .05 so we fail to reject the null.
-![unnamed](https://github.com/kewlerkids/ailelevy.github.io/assets/42384002/ac3d1dcf-4dae-430a-808e-a043c8b5fafd)![newplot (4)](https://github.com/kewlerkids/outageanalysis/assets/42384002/4d95089f-98e7-431b-a894-8c1dadd0d5b1)
+![unnamed](https://github.com/kewlerkids/ailelevy.github.io/assets/42384002/ac3d1dcf-4dae-430a-808e-a043c8b5fafd)
 
 
 # Framing a Prediction Problem
