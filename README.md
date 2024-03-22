@@ -28,7 +28,7 @@ Why This Matters: If you want to get a new home somewhere but want to have relia
 
 
 ## Data Cleaning and Exploratory Data Analysis
-### Cleaning Process
+## Data Cleaning Process
 
 
 EXAMPLE DATA SET WE CAN USE
@@ -42,53 +42,29 @@ EXAMPLE DATA SET WE CAN USE
 | jumbo meal   | 0.0134523  | 0.0184634  | 0.0156884 | 0.0152808 | 0.0153607 | 0.0199057 | 0.0251192 | 0.0279064 | 0.025987  | 0.0258523 | 0.0298658 |
 | holiday meal | 0.0192448  | 0.0224287  | 0.0210711 | 0.0249769 | 0.0234608 | 0.0279138 | 0.0277424 | 0.03534   | 0.0378144 | 0.0397381 | 0.0435724 |
 
-
-### Exploratory Analysis
-#### Univariate Analysis
+### Univariate Analysis
 (https://github.com/kewlerkids/ailelevy.github.io/assets/42384002/a5cb20e7-1b93-4e94-9400-f7cf575313ce)
  
-#### Bivariate Analysis
+### Bivariate Analysis
+### Interesting Aggregates
+
+## Assessment of Missingness
+### NMAR Analysis
+### Missingness Dependency
+
 
 ## Hypothesis Testing
 
-## Predicting Power Outages
+## Framing a Prediction Problem
+### Problem Identification
 
-### Assessment of Missingness
+## Baseline Model
 
-### Baseline Model
-
-### Final Model Improvements
+## Final Model
 
 ## Fairness Analysis
-
+---
 ## Conclusion
 
 Our analysis offers insightful findings on the impact of severe weather on power outages.
 
-Notes for myself
-Introduction
-Begin with an overview of the project's focus on analyzing power outages and their relationship to severe weather events. Highlight the importance of this analysis in the context of infrastructure resilience and emergency response planning.
-Step 1: Introduction and Question Identification
-Present the project's primary question: How do severe weather events impact the frequency and severity of power outages?
-Discuss the relevance of this question to the general public and stakeholders in emergency management and infrastructure maintenance.
-Step 2: Data Cleaning and Exploratory Data Analysis
-Detail the data cleaning process, including merging datasets, handling missing values, and ensuring data integrity.
-Display a histogram of the distribution of outages over time and discuss any observed trends.
-Embed a box plot illustrating the relationship between outage duration and weather severity.
-Step 3: Assessment of Missingness
-Discuss any columns in the dataset suspected of being NMAR and explain the reasoning.
-Conduct permutation tests to examine the dependency of missing data on other columns, focusing on the ratings and outage duration.
-Include visualizations related to missingness analysis and interpret the results.
-Step 4: Hypothesis Testing
-State the null and alternative hypotheses regarding the impact of severe weather on power outages.
-Describe the permutation test conducted, including the choice of test statistic and significance level.
-Present the p-value and conclude whether the data supports an increase in power outages due to severe weather events.
-Steps 5-8: Predictive Modeling and Fairness Analysis
-Step 5: Frame a prediction problem focusing on forecasting power outages based on weather conditions and other relevant factors.
-Step 6: Describe the baseline model, including features used and model performance.
-Step 7: Discuss improvements made in the final model and the rationale behind feature selection and hyperparameter tuning.
-Step 8: Conduct a fairness analysis comparing model performance across different demographic groups or regions.
-Summarize the predictive modeling and fairness analysis findings, highlighting any significant insights or implications for policy and planning.
-Conclusion
-Conclude with a summary of key findings and their implications for understanding and mitigating the impact of severe weather on power outages.
-Suggest directions for future research or action based on the project's outcomes.
