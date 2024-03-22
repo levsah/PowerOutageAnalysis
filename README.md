@@ -59,20 +59,24 @@ We made a new data frame with only the rows that had severe weather in them. We 
 ### Univariate Analysis
 We wanted to create a pivot table of all types of power-outage causes to show the trend between the customers affected compared to this. Please view the pivot table below.
 
+![newplot](https://github.com/kewlerkids/outageanalysis/assets/42384002/8445ec06-4e21-4c07-bb02-b8f42388fd70)
 
 
 Out of all the power outages, we added all the minutes for each type. We noticed that 75% of power outages were caused by severe weather, which can be seen through here.
  
 ### Bivariate Analysis
 We created scatter plots to compare the number of power outages in the states. With this, we compared the power outage total to the outage duration. With these two numerical features, we wanted to access similar features by finding the R2 and comparing it to other features. With the R^2 of numerical features, we compared this to the number of power outages per state. To access which features have the best correlation with the number of power outages per state we filter out numerical features from serve weather df. 
+![newplot (2)](https://github.com/kewlerkids/outageanalysis/assets/42384002/c3a61838-867f-47ef-bbbb-008d3ed4fb55)
 
 We realized we couldn't perform the same aggregation on all numerical features so we split the features by their aggregation method into two lists. We wanted to find the correlation of each feature per aggregation method with the number of power outages per state. So we can try to see if they are at all related. After we compared the R^2 values to the rank of each group within the two lists. We took the top three features with the best R^2 from each group and determined the best features to compare the number of power outages per state. Then we asked how the correlations of the features we took the sums of compare to the average. We realized that the features that we aggregated with the sum had a much larger R^2, so we stuck with the sum. We already compared the number of power outages per state and the outage duration and coincidently outage duration happened to be a feature with one of the best R^2. So we compared the number of power outages with the other top two features. With this, we made scatter plots with the two top features we had.
 
 ### Interesting Aggregates
 As the number of power outages what happens to the other features and why? So when we increase the number of power outages the number of customers also increases, and while it makes sense to think that at first, it was nice to see that this was also shown within the data.
+![newplot (5)](https://github.com/kewlerkids/outageanalysis/assets/42384002/1f1ebcdb-f336-48c2-9cb9-145d397eef6a)
 
 # Assessment of Missingness
 We had started with a lot of missingness within our data but through our data cleaning process, we were able to reduce or remove the amount of missingness that would have been prevalent. Yet we still found features with missingness dependencies. Such as the customers affected feature, we found that this feature was not missing at random
+![newplot (3)](https://github.com/kewlerkids/outageanalysis/assets/42384002/b5eb997d-3139-433a-9198-bd81370f0151)
 
 ### NMAR Analysis
 It was not missing a random because the P-value we received was high, which suggests our columns are independent of each other. There is a high probability that the missingness of customers affected is not related to how long a power outage lasts.
@@ -85,7 +89,8 @@ Null Hypothesis: There is no difference in the average number of power outages b
 Alternate Hypothesis: There is a difference in the average number of power outages between coastal states and non-coastal states.
 
 Our P-value is greater than our alpha level of .05 so we fail to reject the null.
-![unnamed](https://github.com/kewlerkids/ailelevy.github.io/assets/42384002/ac3d1dcf-4dae-430a-808e-a043c8b5fafd)
+![unnamed](https://github.com/kewlerkids/ailelevy.github.io/assets/42384002/ac3d1dcf-4dae-430a-808e-a043c8b5fafd)![newplot (4)](https://github.com/kewlerkids/outageanalysis/assets/42384002/4d95089f-98e7-431b-a894-8c1dadd0d5b1)
+
 
 # Framing a Prediction Problem
 ### Problem Identification
