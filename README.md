@@ -87,6 +87,8 @@ However, when we compare coustmers affected to another column, such as populatio
 # Hypothesis Testing
 Null Hypothesis: There is no difference in the average number of power outages between coastal states and non-coastal states. By coastal we mean anything on the outer border vs the inner border of the country.
 Alternate Hypothesis: There is a difference in the average number of power outages between coastal states and non-coastal states.
+![image](https://github.com/kewlerkids/outageanalysis/assets/42384002/38823f95-2177-48c4-ac56-f7626131d289)![image](https://github.com/kewlerkids/outageanalysis/assets/42384002/47aee95b-8823-4fec-b5b5-7b30524f5102)
+
 
 Our P-value is greater than our alpha level of .05 so we fail to reject the null.
 ![unnamed](https://github.com/kewlerkids/ailelevy.github.io/assets/42384002/ac3d1dcf-4dae-430a-808e-a043c8b5fafd)![newplot (4)](https://github.com/kewlerkids/outageanalysis/assets/42384002/4d95089f-98e7-431b-a894-8c1dadd0d5b1)
