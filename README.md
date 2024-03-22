@@ -26,7 +26,7 @@ Why This Matters: If you want to get a new home somewhere but want to have relia
 
 
 ## Data Cleaning and Exploratory Data Analysis
-## Data Cleaning Process
+### Data Cleaning Process
 
 We made a new data frame with only the rows that had severe weather in them. We also took out rows where both CUSTOMERS.AFFECTED  and the OUTAGE.DURATION was empty/na because we want to reduce missingness in the main features we want to analyze.
 
