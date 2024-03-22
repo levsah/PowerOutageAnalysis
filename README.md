@@ -75,6 +75,7 @@ Null Hypothesis: There is no difference in the average number of power outages b
 Alternate Hypothesis: There is a difference in the average number of power outages between coastal states and non-coastal states.
 
 Our P-value is greater than our alpha level of .05 so we fail to reject the null.
+![unnamed](https://github.com/kewlerkids/ailelevy.github.io/assets/42384002/ac3d1dcf-4dae-430a-808e-a043c8b5fafd)
 
 ## Framing a Prediction Problem
 ### Problem Identification
