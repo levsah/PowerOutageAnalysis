@@ -55,6 +55,7 @@ We made a new data frame with only the rows that had severe weather in them. We 
 | -0.2 | normal | 2013-06-21 | 17:39:00 |
 | -0.2 | normal | 2013-06-21 | 3:00:00 |
 | 0 | normal | 2005-09-21 | 19:00:00 |
+![image](https://github.com/kewlerkids/outageanalysis/assets/42384002/162aec82-339b-4488-987b-3835cfe95489)
 
 ### Univariate Analysis
 We wanted to create a pivot table of all types of power-outage causes to show the trend between the customers affected compared to this. Please view the pivot table below.
