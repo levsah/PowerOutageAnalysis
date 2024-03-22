@@ -1,5 +1,4 @@
 # Analyzing the impacts of Power Outages caused by Natural Disasters across different regions in the US
-## Project Overview
 This is a data science project on if power outages are more likely to effect costal states more than inward states.
 
 **Authors**: [Aile Banuelos](https://github.com/kewlerkids), [Levy Sahoo](https://github.com/levsah)
