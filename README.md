@@ -75,6 +75,7 @@ We realized we couldn't perform the same aggregation on all numerical features s
 ### Interesting Aggregates
 As the number of power outages what happens to the other features and why? So when we increase the number of power outages the number of customers also increases, and while it makes sense to think that at first, it was nice to see that this was also shown within the data.
 ![newplot (5)](https://github.com/kewlerkids/outageanalysis/assets/42384002/1f1ebcdb-f336-48c2-9cb9-145d397eef6a)
+![newplot (6)](https://github.com/kewlerkids/outageanalysis/assets/42384002/76d5462e-15ee-40cb-bd1d-015596803d96)
 
 # Assessment of Missingness
 We had started with a lot of missingness within our data but through our data cleaning process, we were able to reduce or remove the amount of missingness that would have been prevalent. Yet we still found features with missingness dependencies. Such as the customers affected feature, we found that this feature was not missing at random
